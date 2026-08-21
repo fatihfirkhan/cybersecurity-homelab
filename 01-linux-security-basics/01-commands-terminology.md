@@ -5,6 +5,7 @@
 | `id` | user detailed information |
 | `groups` | shows which groups current user belongs to|
 | `ls` | list |
+| `Ctrl + L` | clear terminal |
 
 
 ## Terminology
