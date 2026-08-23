@@ -6,7 +6,7 @@
 | `groups` | shows which groups current user belongs to|
 | `ls` | list |
 | `Ctrl + L` | clear terminal |
-| `pwd` | "Print Working Directory" shows full path of the folder you are currently in |
+| `pwd` | Print Working Directory; shows full path of the folder you are currently in |
 
 
 ## Terminology
@@ -16,6 +16,7 @@
 | Make Permanent | save shared-folder configuration |
 | groups | collection of user accounts bundled together to share same permissions & access rights |
 | flags | options/switches that modify how the command behaves (e.g., -l or -a) *refer **ls-la_command.png**  |
+| symlink | symbolic link; basically a shortcut file |
 
 
 ## Flags
