@@ -9,6 +9,9 @@
 | `pwd` | Print Working Directory; shows full path of the folder you are currently in |
 | `cd -` | undo to previous directory |
 | `cd ~` | return to home directory |
+| `mkdir` | create new directory/folder |
+| `echo` | prints text to screen or sends text into a file |
+| `chmod` | changes a file's permissions |
 
 
 ## Terminology
