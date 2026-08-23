@@ -6,6 +6,7 @@
 | `groups` | shows which groups current user belongs to|
 | `ls` | list |
 | `Ctrl + L` | clear terminal |
+| `pwd` | "Print Working Directory" shows full path of the folder you are currently in |
 
 
 ## Terminology
@@ -14,6 +15,25 @@
 | Auto-mount | automatically make the shared folder available every time Kali starts |
 | Make Permanent | save shared-folder configuration |
 | groups | collection of user accounts bundled together to share same permissions & access rights |
+| flags | options/switches that modify how the command behaves (e.g., -l or -a) *refer **ls-la_command.png**  |
+
+
+## Flags
+| Flags | Description |
+|---|---|
+| `-l` | Long format (shows file permissions, owner, size, and date modified) |
+| `-a` | All (shows hidden files that start with a dot (e.g., bashrc) |
+
+
+## Root-level directories in Linux
+| Directory | Description |
+|---|---|
+| /home | Personal folders for regular users |
+| /etc | System-wide config and settings files |
+| /var | Variable data that changes during system operation (system logs, mail spools, and databases) |
+| /tmp | Temporary files |
+| /usr | User programs, tools, and libraries that come with the os |
+| /opt | Optional, self-contained third-party software |
 
 
 ## Key Group Permissions for kali
