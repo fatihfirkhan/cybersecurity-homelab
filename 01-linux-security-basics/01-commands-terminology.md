@@ -7,6 +7,8 @@
 | `ls` | list |
 | `Ctrl + L` | clear terminal |
 | `pwd` | Print Working Directory; shows full path of the folder you are currently in |
+| `cd -` | undo to previous directory |
+| `cd ~` | return to home directory |
 
 
 ## Terminology
@@ -24,6 +26,7 @@
 |---|---|
 | `-l` | Long format (shows file permissions, owner, size, and date modified) |
 | `-a` | All (shows hidden files that start with a dot (e.g., bashrc) |
+| `-ld` | 
 
 
 ## Root-level directories in Linux
