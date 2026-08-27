@@ -12,6 +12,8 @@
 | `mkdir` | create new directory/folder |
 | `echo` | prints text to screen or sends text into a file |
 | `chmod` | changes a file's permissions |
+| `su` | switch user; temporarily switches to another user account in the terminal |
+| `cat` | reads, displays, and concatenates file contents to the terminal |
 
 
 ## Terminology
