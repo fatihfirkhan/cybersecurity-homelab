@@ -14,6 +14,7 @@
 | `chmod` | changes a file's permissions |
 | `su` | switch user; temporarily switches to another user account in the terminal |
 | `cat` | reads, displays, and concatenates file contents to the terminal |
+| `systemctl`  | used to control background programs (services) on Linux. Think of it as the On/Off/Restart switch for tools like SSH, web servers, or firewalls |
 
 
 ## Terminology
@@ -24,6 +25,7 @@
 | groups | collection of user accounts bundled together to share same permissions & access rights |
 | flags | options/switches that modify how the command behaves (e.g., -l or -a) *refer **ls-la_command.png**  |
 | symlink | symbolic link; basically a shortcut file |
+| service | also called a daemon; program that runs silently in the background without needing an open window or user interaction |
 
 
 ## Flags
@@ -31,7 +33,8 @@
 |---|---|
 | `-l` | Long format (shows file permissions, owner, size, and date modified) |
 | `-a` | All (shows hidden files that start with a dot (e.g., bashrc) |
-| `-ld` | 
+| `--type=service` | Look only at services (ignores hardware mounts, timers, sockets) |
+| `--state=running` | Only displays processes currently alive in memory |
 
 
 ## Root-level directories in Linux
