@@ -12,6 +12,7 @@
 | `mkdir` | create new directory/folder |
 | `echo` | prints text to screen or sends text into a file |
 | `chmod` | changes a file's permissions |
+| `adduser` | create new user |
 | `su` | switch user; temporarily switches to another user account in the terminal |
 | `cat` | reads, displays, and concatenates file contents to the terminal |
 | `systemctl`  | used to control background programs (services) on Linux. Think of it as the On/Off/Restart switch for tools like SSH, web servers, or firewalls |
