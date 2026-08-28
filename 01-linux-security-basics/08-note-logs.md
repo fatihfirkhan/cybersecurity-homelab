@@ -24,8 +24,32 @@ Exploring how to view auth, sys and kernel logs in terminal
 ---
 
 ### 1.2 Flags
+`-u` <service>: View logs for a specific systemd service 
 
-### Note 1
+`-k`: Shows only kernel-level ring-buffer messages
+
+`-n` <number>: View the last **N** lines
+
+`-f`: Follow logs in real-time (live monitoring)
+
+---
+
+### Note 
 ```
-n -20 shows only the last 20 log entries. Its optional
+-n <number> shows only the last <number> log entries. Its optional
 ```
+
+## 2.0 Logs Interpretation
+
+### Sample output
+```
+Aug 27 09:45:30 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 27 09:45:31 kali sshd[133276]: Server listening on 0.0.0.0 port 22.
+Aug 27 09:45:31 kali sshd[133276]: Server listening on :: port 22.
+Aug 27 09:45:31 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+```
+### How to read the logs?
+| timestamp | hostname | Process/Service[PID] | Message |
+| --- | --- | --- | --- |
+| Aug 27 09:45:30 | kali | systemd[1]: | Starting ssh.service - OpenBSD Secure Shell server |
+
