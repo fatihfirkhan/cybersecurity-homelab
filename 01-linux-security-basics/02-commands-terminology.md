@@ -36,6 +36,7 @@
 ## Flags
 | Flags | Description |
 |---|---|
+| `--help` | prints a quick list of what the command does, how to use it, and what all the options/flags mean |
 | `-l` | Long format (shows file permissions, owner, size, and date modified) |
 | `-a` | All (shows hidden files that start with a dot (e.g., bashrc) |
 | `--type=service` | Look only at services (ignores hardware mounts, timers, sockets) |
