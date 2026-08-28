@@ -15,6 +15,7 @@
 | `su` | switch user; temporarily switches to another user account in the terminal |
 | `cat` | reads, displays, and concatenates file contents to the terminal |
 | `systemctl`  | used to control background programs (services) on Linux. Think of it as the On/Off/Restart switch for tools like SSH, web servers, or firewalls |
+| `ss` | socket statistics; | inspect network connections, open ports, and socket performance |
 
 
 ## Terminology
@@ -26,6 +27,9 @@
 | flags | options/switches that modify how the command behaves (e.g., -l or -a) *refer **ls-la_command.png**  |
 | symlink | symbolic link; basically a shortcut file |
 | service | also called a daemon; program that runs silently in the background without needing an open window or user interaction |
+| SSH | Secure Shell; network protocol that allows to securely connect, control, and execute commands on a remote computer/server over an unsecured network |
+| ports | virtual doorway that directs incoming and outgoing internet traffic to the correct software/service |
+| Listening | program is on standby, waiting for incoming data or a connection |
 
 
 ## Flags
