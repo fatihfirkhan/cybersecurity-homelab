@@ -18,6 +18,7 @@
 | `systemctl`  | used to control background programs (services) on Linux. Think of it as the On/Off/Restart switch for tools like SSH, web servers, or firewalls |
 | `ss` | socket statistics; | inspect network connections, open ports, and socket performance |
 | `sudo apt update && sudo apt install` | update & install software applications |
+| `journalctl` | to read system's event log |
 
 ## Terminology
 | Word | Description |
