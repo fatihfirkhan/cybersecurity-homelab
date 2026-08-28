@@ -38,6 +38,7 @@ Exploring how to view auth, sys and kernel logs in terminal
 ```
 -n <number> shows only the last <number> log entries. Its optional
 ```
+---
 
 ## 2.0 Logs Interpretation
 
