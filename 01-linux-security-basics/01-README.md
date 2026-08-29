@@ -1,25 +1,17 @@
 ## 1. Objective
 
-What are you trying to learn?
-
 Learn basic Linux security concepts including users, permissions, processes, services and logs.
 
 ## 2. Environment OS
  
-Kali Linux VM: VMware Workstation RAM: 4 GB Network: Host-only
+Kali Linux VM: VMware Workstation RAM: 5 GB Network: Host-only
 
-## 3. What I Learned
+## 3. Tasks
+What I actually did
 
-Linux uses permissions to control who can read, write and execute files.
+- Identifying user, groups and id for the machine in logged in
+- File sharing between vm and main computer
+- Linux uses permissions to control who can read, write and execute files
+- Learn root-level directories in Linux
+- Monitoring proceses, services, network connections/ports and logs in CLI
 
-(Then explain it in your own words)
-
-## 4. Tasks
-Document what you actually did.
-
-    Created a new user
-    Created a shared file
-    Changed file permissions
-    Tested access using different users
-    Investigated authentication logs
-    Commands
