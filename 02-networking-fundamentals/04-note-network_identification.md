@@ -1,11 +1,11 @@
 # Network Identification
 
-## IP address breakdown
+## 1.0 IP address breakdown
 
 (`192.168.100.10/24`)
 
 ```
- 192 . 168 . 100  .  10   /   24
+ 192 . 168 . 100  .  1   /   24
 └───────┬───────┘   └─┬─┘    └─┬─┘
   Network Part     Host ID  Subnet Mask
  (Subnet Group)  (Machine)   (Boundary)
@@ -15,9 +15,11 @@
 | **IP Address** | `192.168.100.10` | full address of this machine |
 | **Subnet Mask** | `/24` | rule: The first 3 numbers set the group |
 | **Subnet** | `192.168.100.0` | the group. all machine starting with `192.168.100` can talk |
-| **Host ID** | `.10` | unique number for this single machine |
+| **Host ID** | `.1` | unique number for this single machine |
 
-## Assign IP to Adapter2 (eth1)
+## 2.0 Assign IP to Adapter 2 (eth1 and enp0s8)
+
+### Issue
 Used `ip addr` command to identify IP of Kali Linux and Linux Mint. Image below shows that eth1 & enp0s8 does not have any IP because its and Internal Network that does not come with DHCP, unlike eth0 & enp0s3 (NAT)
 
 ![File permissions](screenshots/kali_linux_ip_addr.png) 
@@ -28,7 +30,8 @@ Used `ip addr` command to identify IP of Kali Linux and Linux Mint. Image below 
 
 *Output of sudo ip addr add <IP> dev enp0s8 command* for Linux Mint
 
-
+---
+### Solution
 
 The **solution** is to manually assign the IP for eth1 and enp0s8 using:
 
@@ -39,3 +42,21 @@ The **solution** is to manually assign the IP for eth1 and enp0s8 using:
 ![File permissions](screenshots/kali_linux_eth1_ip_assign.png)
 
 ![File permissions](screenshots/linux_mint_enp0s8_ip_assign.png)
+
+## 3.0 Connectivity Test Between VMs
+`ping <IP>`
+
+![File permissions](screenshots/kali-linux_to_linux-mint_ping.png)
+
+*Ping from Kali Linux to Linux Mint*
+
+![File permissions](screenshots/linux-mint_to_kali-linux_ping.png)
+
+*Ping from Linux Mint to Kali Linux*
+
+---
+
+| VM Name | Role | Interface | Assigned IP | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **Kali Linux** | Attacker | `eth1` | `192.168.100.1/24` | UP (Verified) |
+| **Linux Mint** | Target | `enp0s8` | `192.168.100.2/24` | UP (Verified) |
