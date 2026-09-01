@@ -16,3 +16,5 @@
 | **Subnet Mask** | `/24` | rule: The first 3 numbers set the group |
 | **Subnet** | `192.168.100.0` | the group. all machine starting with `192.168.100` can talk |
 | **Host ID** | `.10` | unique number for this single machine |
+
+## Assign IP to Adapter2 (eth1)
