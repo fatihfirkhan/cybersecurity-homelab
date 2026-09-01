@@ -11,3 +11,4 @@
 | Host-Only | creates a private network between physical computer (the host) and the VMs | no internet |
 | Internal Network | isolated virtual switch only for VMs | host machine cannot see the traffic, and no internet for VMs |
 | Outbound traffic | network data that starts inside your machine and goes out to external destination |
+| subnet | smaller, isolated section of a larger network | IP address is a street address, the subnet is the specific **neighborhood**. Devices in the same **neighborhood** can talk directly to each other without needing a router |
