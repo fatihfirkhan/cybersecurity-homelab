@@ -1,7 +1,8 @@
 ## Useful Commands
 | Command | Description |
 |---|---|
-| `ip addr` | N/A |
+| `ip addr` | identify machine's IP |
+| `nmap` | scan targets across a network to discover active hosts, locate open ports, detect running services, and identify operating systems |
 
 
 ## Terminology
