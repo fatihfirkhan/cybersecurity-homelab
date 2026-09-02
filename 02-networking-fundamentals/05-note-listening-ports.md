@@ -8,7 +8,7 @@
 
 ---
 
-#### Linux Mint
+### Linux Mint
 
 ![File permissions](screenshots/linux-mint_listening-ports.png)
 
@@ -22,6 +22,6 @@ Linux Mint has **three primary background services** waiting for incoming networ
 
 ---
 
-#### Key Security Takeaway
+### Key Security Takeaway
 * **No TCP services are exposed to the isolated network:** Services listening on `127.0.0.x` only accept connections originating from Linux Mint itself.
 * **Only UDP `avahi-daemon` is exposed:** Because it is bound to `0.0.0.0`, it can receive UDP discovery packets from Kali on the isolated network.
