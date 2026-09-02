@@ -1,6 +1,6 @@
 # Scan Linux Mint from Kali with `nmap`
 
-![Nmap Scan Results](screenshots/kali-linux_nmap_linux-mint.png)
+![Nmap Scan Results](screenshots/kali-linux_scan_nmap_linux-mint.png)
 
 The screenshot shows the output from running both `nmap` and `nmap -sV` against Linux Mint (`192.168.100.2`).
 
