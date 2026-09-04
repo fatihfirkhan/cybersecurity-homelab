@@ -3,6 +3,7 @@
 |---|---|
 | `ip addr` | identify machine's IP |
 | `nmap` | scan targets across a network to discover active hosts, locate open ports, detect running services, and identify operating systems |
+| `ssh <username>@<IP>` | ssh to target machine |
 
 
 ## Terminology
