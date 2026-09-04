@@ -18,4 +18,5 @@
 | DNS Cache | Temporary local memory that stores recently resolved domain names and their IP addresses | Speeds up repeat lookups and reduces outbound internet traffic (e.g., `systemd-resolve`) |
 | DNS Resolver | Client-side software agent that queries DNS servers to find IP addresses for domain names | Acts as bridge between applications and DNS servers (e.g., `systemd-resolve`) |
 | mDNS & DNS-SD | Multicast DNS & DNS Service Discovery; protocols that let devices on the same local network find and talk to each other automatically without needing a central router or DNS server | Devices on the same local network can find each other automatically by name (e.g., `device.local`) |
+| Packet | a small chunk of data sent across a network | Consists of a header (metadata like source and destination IPs) and a payload (the actual data being transferred) |
 
