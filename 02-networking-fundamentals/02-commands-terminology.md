@@ -20,3 +20,6 @@
 | mDNS & DNS-SD | Multicast DNS & DNS Service Discovery; protocols that let devices on the same local network find and talk to each other automatically without needing a central router or DNS server | Devices on the same local network can find each other automatically by name (e.g., `device.local`) |
 | Packet | a small chunk of data sent across a network | Consists of a header (metadata like source and destination IPs) and a payload (the actual data being transferred) |
 | ICMP | Internet Control Message Protocol; a protocol used for diagnostic testing and error reporting | Does not carry application data; used by tools like `ping` to test network health and reachability. Unlike TCP or UDP, it is not used to transfer actual user data (like web pages or files). Instead, it acts as the diagnostic and maintenance messenger of the internet |
+| SYN | synchronize | TCP handshake; Kali $\rightarrow$ Linux Mint |
+| SYN-ACK | Synchronize-Acknowledge | TCP handshake; Linux Mint $\rightarrow$ Kali |
+| ACK | acknowledge | TCP handshake; Kali $\rightarrow$ Linux Mint |
