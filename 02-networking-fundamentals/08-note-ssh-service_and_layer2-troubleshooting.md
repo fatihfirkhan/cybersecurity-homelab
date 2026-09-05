@@ -91,3 +91,23 @@ To reset the virtual switch link state:
 [!File permissions](screenshots/adapter2_disconnected_troubleshoot.png)
 
 Layer 2 communication was fully restored
+
+---
+
+## 4.0 Successful SSH Session & Remote Execution
+
+With the link operational, the SSH connection was executed from Kali with `ssh <username>@<IP>
+
+[!File permissions](screenshots/kali-linux_ssh_linux-mint_success.png)
+
+### Remote Host Verification Commands
+
+Inside the active remote shell, `whoami` `hostname` `groups` `id` commands were run to confirm direct control over Linux Mint
+
+[!File permissions](screenshots/ssh_test.png)
+
+
+### Network Traffic from Wireshark
+
+[!File permissions](screenshots/wireshark_ssh_success.png)
+
