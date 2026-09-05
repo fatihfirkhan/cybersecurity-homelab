@@ -9,7 +9,11 @@ The previous SSH connection attempt failed with `Connection refused` because no 
 
 ### Installation & Service Activation (Linux Mint)
 
-On Linux Mint, OpenSSH server was installed and enabled with `sudo apt update && sudo apt install -y openssh-server` and `sudo systemctl enable --now ssh`
+On Linux Mint, OpenSSH server was installed and enabled with:
+
+`sudo apt update && sudo apt install -y openssh-server` 
+
+`sudo systemctl enable --now ssh`
 
 [!File permissions](screenshots/linux-mint_install_openssh.png)
 
