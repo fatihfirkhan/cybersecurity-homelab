@@ -15,13 +15,13 @@ On Linux Mint, OpenSSH server was installed and enabled with:
 
 `sudo systemctl enable --now ssh`
 
-[!File permissions](screenshots/linux-mint_install_openssh.png)
+![File permissions](screenshots/linux-mint_install_openssh.png)
 
-[!File permissions](screenshots/linux-mint_install_openssh.png)
+![File permissions](screenshots/linux-mint_install_openssh.png)
 
 Verification showed the daemon listening on TCP port 22:
 
-[!File permissions](screenshots/linux-mint_ssh-service_verification.png)
+![File permissions](screenshots/linux-mint_ssh-service_verification.png)
 
 ---
 
@@ -88,11 +88,11 @@ To reset the virtual switch link state:
 1. In VirtualBox, opened network settings for both VMs and unchecked Cable Connected on Adapter 2
 2. Waited 3 seconds, then re-checked Cable Connected on both VMs
 
-[!File permissions](screenshots/network_settings_vm.png)
+![File permissions](screenshots/network_settings_vm.png)
 
 #### Retested neighbor resolution on Kali
 
-[!File permissions](screenshots/adapter2_disconnected_troubleshoot.png)
+![File permissions](screenshots/adapter2_disconnected_troubleshoot.png)
 
 Layer 2 communication was fully restored
 
@@ -102,16 +102,16 @@ Layer 2 communication was fully restored
 
 With the link operational, the SSH connection was executed from Kali with `ssh <username>@<IP>
 
-[!File permissions](screenshots/kali-linux_ssh_linux-mint_success.png)
+![File permissions](screenshots/kali-linux_ssh_linux-mint_success.png)
 
 ### Remote Host Verification Commands
 
 Inside the active remote shell, `whoami` `hostname` `groups` `id` commands were run to confirm direct control over Linux Mint
 
-[!File permissions](screenshots/ssh_test.png)
+![File permissions](screenshots/ssh_test.png)
 
 
 ### Network Traffic from Wireshark
 
-[!File permissions](screenshots/wireshark_ssh_success.png)
+![File permissions](screenshots/wireshark_ssh_success.png)
 
