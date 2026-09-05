@@ -54,7 +54,7 @@ From 192.168.100.2 icmp_seq=1 Destination Host Unreachable
 
 ## 3.0 Troubleshooting
 
-### Interface State Verification
+### 3.1 Interface State Verification
 
 Both machines were inspected with `ip addr show <interface>` to confirm the non-persistent static IP configuration was intact
 
@@ -69,19 +69,23 @@ Interface state <BROADCAST,MULTICAST,UP,LOWER_UP>, assigned 192.168.100.1/24
 
 Both interfaces were administratively **UP** with correct IP assignments, ruling out IP misconfiguration
 
-### VirtualBox Adapter Adjustment
+---
+
+### 3.2 VirtualBox Adapter Adjustment
 
 On Linux Mint's virtual machine settings (Settings $\rightarrow$ Network $\rightarrow$ Adapter 2)
 
 * Changed Promiscuous Mode from Deny to Allow VMs to permit inter-VM frame reception
 
-#### Inspecting Neighbor Cache `ip neigh show`
+#### 3.2.1 Inspecting Neighbor Cache `ip neigh show`
 
 The command `ip neigh show dev <interface>` displays the kernel's ARP (Address Resolution Protocol) cache table. It shows the mapping between local IPv4 addresses and hardware MAC addresses discovered on that link.
 
 * Success on Linux Mint but **FAILED** in Kali Linux
 
-### Virtual Cable Toggle & Resolution
+---
+
+### 3.3 Virtual Cable Toggle & Resolution
 
 To reset the virtual switch link state:
 
@@ -90,7 +94,7 @@ To reset the virtual switch link state:
 
 ![File permissions](screenshots/network_settings_vm.png)
 
-#### Retested neighbor resolution on Kali
+#### 3.3.1 Retested neighbor resolution on Kali
 
 ![File permissions](screenshots/adapter2_disconnected_troubleshoot.png)
 
