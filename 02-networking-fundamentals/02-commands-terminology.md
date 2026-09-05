@@ -24,3 +24,5 @@
 | SYN | synchronize | TCP handshake; Kali $\rightarrow$ Linux Mint |
 | SYN-ACK | Synchronize-Acknowledge | TCP handshake; Linux Mint $\rightarrow$ Kali |
 | ACK | acknowledge | TCP handshake; Kali $\rightarrow$ Linux Mint |
+| Layer 2 (Data Link Layer) | The network layer that handles direct communication between devices connected to the same local switch or virtual wire | Relies on hardware MAC addresses and ARP rather than IP addresses to move data locally |
+
