@@ -21,3 +21,5 @@ This section provide details of the network adapters used for the project
   * adapter type: Intel PRO/1000 MT Desktop (82540EM)
   * Promiscuous Mode: Deny $\rightarrow$ Allow VMs (Refer to ![08-note-ssh-service_and_layer2-troubleshooting.md](08-note-ssh-service_and_layer2-troubleshooting.md))
   * interface: enp0s8
+ 
+* Subnet: `192.168.100.0/24`
