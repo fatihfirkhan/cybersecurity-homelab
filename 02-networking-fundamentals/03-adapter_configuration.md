@@ -19,5 +19,5 @@ This section provide details of the network adapters used for the project
 * Linux Mint
   * name: lab-internal-net
   * adapter type: Intel PRO/1000 MT Desktop (82540EM)
-  * Promiscuous Mode: Deny $\rightarrow$ Allow VMs (Refer to ![File permissions](08-note-ssh-service_and_layer2-troubleshooting.md)
+  * Promiscuous Mode: Deny $\rightarrow$ Allow VMs (Refer to ![08-note-ssh-service_and_layer2-troubleshooting.md](08-note-ssh-service_and_layer2-troubleshooting.md))
   * interface: enp0s8
