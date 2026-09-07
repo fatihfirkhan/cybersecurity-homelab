@@ -10,6 +10,7 @@ Used `sudo nano /etc/network/interfaces` to open the interfaces configuration fi
 
 Typed this at the blank space :
 ```
+auto eth1
 iface eth1 inet static
     address 192.168.100.3
     netmask 255.255.255.0
