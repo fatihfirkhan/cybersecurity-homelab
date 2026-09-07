@@ -3,7 +3,7 @@
 |---|---|
 | `ifconfig` | displays or configures active network interface settings (IP address, netmask, MAC address) |
 | `sudo nano <filename OR file path>` | opens Nano command-line text editor with root privileges to modify system configuration files (like Windows Notepad) |
-| ` sudo /etc/init.d/networking restart` | restarts the networking service |
+| `sudo ifup <interface>` | brings a network interface up using its configured settings |
 
 
 ## Terminology
