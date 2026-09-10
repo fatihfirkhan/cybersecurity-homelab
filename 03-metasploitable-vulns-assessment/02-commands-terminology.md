@@ -7,6 +7,7 @@
 | `nmcli connection show` | lists all saved NetworkManager connection profiles and active interfaces |
 | `sudo nmcli connection modify "<connection_name>" <property> <value>` | edits network settings (such as IP address or static/DHCP method) for a specific profile |
 | `sudo nmcli connection up "<connection_name>"` | activates or restarts a connection profile to apply newly configured settings |
+| `sudo nmap -sn <target IP> | scan target IP host |
 
 
 ## Terminology
