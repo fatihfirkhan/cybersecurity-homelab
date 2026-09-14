@@ -8,6 +8,7 @@
 | `sudo nmcli connection modify "<connection_name>" <property> <value>` | edits network settings (such as IP address or static/DHCP method) for a specific profile |
 | `sudo nmcli connection up "<connection_name>"` | activates or restarts a connection profile to apply newly configured settings |
 | `sudo nmap -sn <target IP>` | scan target IP host |
+| `sudo nmap -p- <target IP>` | scans all 65,535 TCP ports on the target host instead of just the default top 1,000 common ports |
 
 
 ## Terminology
