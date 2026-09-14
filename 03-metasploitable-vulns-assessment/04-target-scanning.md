@@ -58,3 +58,57 @@ MAC Address: 08:00:27:0E:0A:C0 (Oracle VirtualBox virtual NIC)
 
 Nmap done: 1 IP address (1 host up) scanned in 2.60 seconds
 ```
+### Scan Highlights
+
+    Total Ports Scanned: Top 1,000 TCP ports
+
+    State: 977 closed ports, 23 open ports
+
+    Target Host Latency: 0.0019s (confirming high responsiveness on local network)
+
+### Port and Service Analysis
+
+The 23 open ports identified represent a massive attack surface across various functional categories:
+A. Core Web & Application Services
+
+    Port 80 (HTTP): Serves web pages and web applications hosted on Apache.
+
+    Port 8009 (AJP13) & Port 8180 (HTTP Alternate): Apache JServ Protocol and secondary web port used for directing traffic to an Apache Tomcat web container.
+
+B. Remote Access & Management
+
+    Port 22 (SSH): Standard secure remote CLI administration.
+
+    Port 23 (Telnet): Legacy unencrypted remote command-line login (cleartext risk).
+
+    Port 5900 (VNC) & Port 6000 (X11): Remote graphical display systems (virtual desktop access).
+
+    Ports 512, 513, 514 (BSD 'r' services - rexec, rlogin, rsh): Obsolete Unix remote execution services that typically rely on insecure host-trust relationships without strong authentication.
+
+C. File Sharing & Network Infrastructure
+
+    Port 21 (FTP) & Port 2121 (FTP Alternate): Used for bi-directional file transfer between systems.
+
+    Port 53 (DNS / Domain): Local domain name resolution service.
+
+    Port 111 (rpcbind) & Port 2049 (NFS): Remote Procedure Call and Network File System used to mount remote file systems over the network.
+
+    Port 139 & 445 (NetBIOS-SSN & SMB): Windows-compatible file and print sharing protocols (Samba).
+
+D. Mail & Communication
+
+    Port 25 (SMTP): Simple Mail Transfer Protocol used for mail delivery and routing.
+
+    Port 6667 (IRC): Internet Relay Chat daemon hosting real-time text chat channels.
+
+E. Database Management Systems
+
+    Port 3306 (MySQL): Relational database backend typically paired with the port 80 web applications.
+
+    Port 5432 (PostgreSQL): Secondary relational database management system.
+
+F. Middleware & Suspicious Ports
+
+    Port 1099 (Java RMI Registry): Remote Method Invocation service allowing Java objects to execute calls across the network.
+
+    Port 1524 (ingreslock): Historically an Ingres database port, but frequently associated with legacy root shell backdoors.
