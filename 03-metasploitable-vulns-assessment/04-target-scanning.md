@@ -276,3 +276,5 @@ Gather additional information
 ```
 Result:
 ![Nmap Full Scan](screenshots/nmap-full-enum.txt)
+
+*The full scan output was saved directly to a text file due to terminal length limits:*
