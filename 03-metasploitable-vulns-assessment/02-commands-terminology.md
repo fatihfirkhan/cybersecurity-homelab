@@ -18,6 +18,8 @@
 |---|---|---|
 | Static IP | A manually assigned and permanent IP address | Unlike a DHCP-assigned IP, a static IP keeps the machine's address fixed, making it easier to reliably scan the machine |
 | Middleware | Software that connects two systems | Examples include web application servers (like Tomcat) or messaging services (like Java RMI) that sit between user interfaces and databases |
+| FTP | File Transfer Protocol; used to send and receive files between computers | An older protocol that sends usernames and passwords in plain text without encryption |
+| UDP | User Datagram Protocol; a simple way to send data without checking if it arrived | Unlike TCP, it does not confirm a connection first, making it faster but less reliable |
 
 ## Flags
 
