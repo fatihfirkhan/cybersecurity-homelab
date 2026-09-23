@@ -4,6 +4,8 @@
 
 run `sudo nmap -sn <target IP>` in Kali Linux
 
+Result:
+
 ```
 ┌──(kali㉿kali)-[~]
 └─$ sudo nmap -sn 192.168.100.3
@@ -20,6 +22,8 @@ In this context: The host is specifically the Metasploitable 2 target at 192.168
 ## 2.0 Basic Port Scanning
 
 run `sudo nmap <target IP>` in Kali Linux
+
+Result:
 
 ```
 ┌──(kali㉿kali)-[~]
@@ -120,6 +124,8 @@ The default Nmap scan does not necessarily scan every TCP port
 
 run `sudo nmap -p- <target IP>` in Kali Linux
 
+Result:
+
 ```
 ┌──(kali㉿kali)-[~]
 └─$ sudo nmap -p- 192.168.100.3
@@ -191,6 +197,8 @@ run `sudo nmap -sV <target IP>` in Kali Linux; This tells Nmap to attempt to ide
 - Product
 - Version
 
+Result:
+
 ```
 ┌──(kali㉿kali)-[~]
 └─$ sudo nmap -sV 192.168.100.3
@@ -247,3 +255,24 @@ Running `nmap -sV` revealed that the target is running ancient, unpatched softwa
 
 ### Summary
 Version detection proves that vulnerabilities do not stem from the port numbers themselves, but from obsolete and backdoored software versions (e.g., `vsftpd 2.3.4` vs standard modern FTP)
+
+## 5.0 Run Nmap Default Scripts
+
+The default Nmap scan does not necessarily scan every TCP port
+
+run `sudo nmap -sC -sV -p- <target IP>` in Kali Linux; This tells Nmap to attempt to identify:
+```
+-p-
+↓
+Find all ports
+
+-sV
+↓
+Identify services/versions
+
+-sC
+↓
+Gather additional information
+```
+Result:
+![Nmap Full Scan](screenshots/nmap-full-enum.txt)
