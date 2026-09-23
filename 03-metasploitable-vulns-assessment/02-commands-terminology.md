@@ -9,6 +9,8 @@
 | `sudo nmcli connection up "<connection_name>"` | activates or restarts a connection profile to apply newly configured settings |
 | `sudo nmap -sn <target IP>` | scan target IP host |
 | `sudo nmap -p- <target IP>` | scans all 65,535 TCP ports on the target host instead of just the default top 1,000 common ports |
+| `sudo nmap -sV- <target IP>` | checks open ports to find the exact software name and version number |
+| `sudo nmap -sC -sV -p- <target IP>` | checks all 65,535 ports for software versions and runs basic built-in tests |
 
 
 ## Terminology
