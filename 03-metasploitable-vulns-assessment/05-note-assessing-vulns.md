@@ -6,3 +6,5 @@ Ask yourself 4 questions for each open port:
 2. What version is running?
 3. Is this service normally expected to be exposed?
 4. Is there anything unusual, old, or potentially dangerous about it?
+
+Analyze results from 'nmap -sV -p- 192.168.100.3` to identify vulnerabilities
