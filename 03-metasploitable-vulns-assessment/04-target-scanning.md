@@ -191,70 +191,15 @@ Nmap done: 1 IP address (1 host up) scanned in 32.19 seconds
 
 The default Nmap scan does not necessarily scan every TCP port
 
-run `sudo nmap -sV <target IP>` in Kali Linux; This tells Nmap to attempt to identify:
+run `sudo nmap -sV -p- <target IP>` in Kali Linux; This tells Nmap to attempt to identify:
 
 - Service
 - Product
 - Version
 
 Result:
+![nmap open ports services scan](screenshots/nmap-services-enum.txt)
 
-```
-┌──(kali㉿kali)-[~]
-└─$ sudo nmap -sV 192.168.100.3
-[sudo] password for kali: 
-Starting Nmap 7.99 ( https://nmap.org ) at 2026-09-14 09:28 -0400
-Nmap scan report for 192.168.100.3 (192.168.100.3)
-Host is up (0.015s latency).
-Not shown: 977 closed tcp ports (reset)
-PORT     STATE SERVICE     VERSION
-21/tcp   open  ftp         vsftpd 2.3.4
-22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
-23/tcp   open  telnet      Linux telnetd
-25/tcp   open  smtp        Postfix smtpd
-53/tcp   open  domain      ISC BIND 9.4.2
-80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
-111/tcp  open  rpcbind     2 (RPC #100000)
-139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-512/tcp  open  exec?
-513/tcp  open  login       OpenBSD or Solaris rlogind
-514/tcp  open  tcpwrapped
-1099/tcp open  java-rmi    GNU Classpath grmiregistry
-1524/tcp open  bindshell   Metasploitable root shell
-2049/tcp open  nfs         2-4 (RPC #100003)
-2121/tcp open  ftp         ProFTPD 1.3.1
-3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
-5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
-5900/tcp open  vnc         VNC (protocol 3.3)
-6000/tcp open  X11         (access denied)
-6667/tcp open  irc         UnrealIRCd
-8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
-8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
-MAC Address: 08:00:27:0E:0A:C0 (Oracle VirtualBox virtual NIC)
-Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 83.04 seconds
-```
-Running `nmap -sV` revealed that the target is running ancient, unpatched software from around 2008–2011. Instead of generic services, specific versions were identified and categorized by risk:
-
-### A. Critical Backdoors & Immediate Compromise Risks
-* **Port 1524 (bindshell / Metasploitable root shell):** A raw command shell running directly as root. Anyone who connects gets instant full administrative control without needing a password
-* **Port 21 (vsftpd 2.3.4):** A famously compromised release that contains a malicious backdoor (CVE-2011-2523), allowing attackers to gain a root shell
-* **Port 6667 (UnrealIRCd):** An IRC chat service running a backdoored version (CVE-2010-2075) that allows arbitrary system command execution
-
-### B. Unencrypted Legacy Protocols (Cleartext Risk)
-* **Port 23 (Telnet) & Ports 512–514 (BSD 'r' services):** Obsolete administrative protocols that send all credentials and commands in clear, unencrypted text across the wire
-* **Port 21 / 2121 (FTP - vsftpd & ProFTPD 1.3.1):** File transfer services that pass usernames and passwords in plain text
-
-### C. Outdated Core Services & Exposed Databases
-* **Port 80 (Apache httpd 2.2.8) & Port 8180 (Apache Tomcat 1.1):** Severely outdated web servers and servlet engines frequently targeted for default credentials and arbitrary code execution
-* **Port 3306 (MySQL 5.0.51a) & Port 5432 (PostgreSQL 8.3):** Old database management systems exposed directly to the network instead of being isolated locally
-* **Port 139 / 445 (Samba 3.X):** Legacy file-sharing daemon with known vulnerabilities for remote execution
-
-### Summary
-Version detection proves that vulnerabilities do not stem from the port numbers themselves, but from obsolete and backdoored software versions (e.g., `vsftpd 2.3.4` vs standard modern FTP)
 
 ## 5.0 Run Nmap Default Scripts
 
@@ -275,6 +220,6 @@ Identify services/versions
 Gather additional information
 ```
 Result:
-![Nmap Full Scan](screenshots/nmap-full-enum.txt)
+![nmap Full Scan](screenshots/nmap-full-enum.txt)
 
 *The full scan output was saved directly to a text file due to terminal length limits:*
