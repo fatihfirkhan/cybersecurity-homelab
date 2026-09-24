@@ -20,6 +20,7 @@
 | Middleware | Software that connects two systems | Examples include web application servers (like Tomcat) or messaging services (like Java RMI) that sit between user interfaces and databases |
 | FTP | File Transfer Protocol; used to send and receive files between computers | An older protocol that sends usernames and passwords in plain text without encryption |
 | UDP | User Datagram Protocol; a simple way to send data without checking if it arrived | Unlike TCP, it does not confirm a connection first, making it faster but less reliable |
+| RCE | Remote Control Execution; attacker can run their own commands/code on a target machine without physical access or valid login credentials | can be done by sending something over the network (a crafted request, a malicious payload, etc.) |
 
 ## Flags
 
