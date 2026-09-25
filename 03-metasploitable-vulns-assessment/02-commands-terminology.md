@@ -18,9 +18,10 @@
 |---|---|---|
 | Static IP | A manually assigned and permanent IP address | Unlike a DHCP-assigned IP, a static IP keeps the machine's address fixed, making it easier to reliably scan the machine |
 | Middleware | Software that connects two systems | Examples include web application servers (like Tomcat) or messaging services (like Java RMI) that sit between user interfaces and databases |
-| FTP | File Transfer Protocol; used to send and receive files between computers | An older protocol that sends usernames and passwords in plain text without encryption |
-| UDP | User Datagram Protocol; a simple way to send data without checking if it arrived | Unlike TCP, it does not confirm a connection first, making it faster but less reliable |
-| RCE | Remote Control Execution; attacker can run their own commands/code on a target machine without physical access or valid login credentials | can be done by sending something over the network (a crafted request, a malicious payload, etc.) |
+| FTP | File Transfer Protocol; Used to send and receive files between computers | An older protocol that sends usernames and passwords in plain text without encryption |
+| UDP | User Datagram Protocol; A simple way to send data without checking if it arrived | Unlike TCP, it does not confirm a connection first, making it faster but less reliable |
+| RCE | Remote Control Execution; Attacker can run their own commands/code on a target machine without physical access or valid login credentials | can be done by sending something over the network (a crafted request, a malicious payload, etc.) |
+| PrivEsc | Privilege Escalation; Gaining higher-level permissions than originally allowed | Usually involves moving from a normal, restricted user account to full administrator or root control by taking advantage of a bug or misconfiguration |
 
 ## Flags
 
